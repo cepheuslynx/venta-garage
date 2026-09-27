@@ -1,0 +1,10 @@
+# LibreOffice/OpenOffice lock files
+.~lock.*#
+.~lock.*
+
+# Microsoft Office temporary files
+~$*
+
+# OS specific files
+.DS_Store
+Thumbs.db

@@ -1,4 +1,28 @@
 id,articulo,valor,descripcion,foto,estado
-1,Bicicleta Trek,120000,"Bicicleta de montaña Trek en excelente estado, aro 29, 21 velocidades.",fotos/bicicleta-trek.jpg,disponible
-2,Sillón de 3 cuerpos,85000,"Sillón muy cómodo, color gris oscuro. Tiene un pequeño detalle en una pata.",fotos/sillon.jpg,reservado
-3,Mesa de centro madera,30000,"Mesa de centro rústica de madera de pino, ideal para sala de estar.",fotos/mesa-centro.jpg,vendido
+1,Refrigerador,499000,Refrigerador FDV dos puertas 512 litros,fotos/preview.jpg,disponible
+2,Lavavajillas,249000,Lavavajillas para 14 cubiertos Marca FDV,fotos/preview.jpg,disponible
+3,Lavadora ,129000,lavadora Samsung 12 litros carga superior,fotos/preview.jpg,disponible
+4,Secadora,129000,Secadora Mabe 12 litros carga frontal,fotos/preview.jpg,disponible
+5,Bicilceta Trek,180000,Biclceta aro 29 Trek 3900,fotos/preview.jpg,disponible
+6,Bicicleta niño,100000,biclceta aro 26 glove niño,fotos/preview.jpg,disponible
+7,biblceta niña,90000,Bicicleta niña aro 20 oxfir luna,fotos/preview.jpg,disponible
+8,Bicicleta Fixie aro 29,90000,Bicicleta fixie con pedaleras,fotos/preview.jpg,disponible
+9,Gokart,50000,Gokart a niño ,fotos/preview.jpg,disponible
+10,Piano ,1500000,Piano Electrico Kawai pd90,fotos/preview.jpg,disponible
+11,Comedor,300000,Comedor 6 sillas blanco,fotos/preview.jpg,disponible
+12,Mesa de centro ,100000,Mesa de centro madera rectangular,fotos/preview.jpg,disponible
+13,televisor ,80000,Televisor 42 pulgadas LG,fotos/preview.jpg,disponible
+14,Televisor Samsung,80000,24”,fotos/preview.jpg,disponible
+15,Home theater,70000,parlante hometheater + subwoffer,fotos/preview.jpg,disponible
+16,Hidrolavadora,59990,hidrolavadora karcher,fotos/preview.jpg,disponible
+17,Impresora canon prixma ,89990,Impresora G3000 cartuchos externos impreison continua,fotos/preview.jpg,disponible
+18,Juego Veladores ,249900,Juego veladores ,fotos/preview.jpg,disponible
+19,cama plaza y media,130000,cama plaza y media mas base boxpring ,fotos/preview.jpg,disponible
+20,Cama 2 plazas,145000,cama doz plazas base boxpring,fotos/preview.jpg,disponible
+21,Juego ollas cocina,60000,Juego de ollas marmicoc,fotos/preview.jpg,disponible
+22,comedor,60000,Mesa + 4 sillas,fotos/preview.jpg,disponible
+23,Guitarra,45000,Guitarra acustica,fotos/preview.jpg,disponible
+24,Ukelele,65000,,fotos/preview.jpg,disponible
+25,Bajo,120000,Bajo eléctrico 5 cuerdas negro,fotos/preview.jpg,disponible
+26,Amplificador,120000,Ibanez 90 watts,fotos/preview.jpg,disponible
+27,Guitarra electrica,120000,LPV ,fotos/preview.jpg,disponible
