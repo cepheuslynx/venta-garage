@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "articulo": "Bicicleta Trek",
+    "valor": 120000,
+    "descripcion": "Bicicleta de montaña Trek en excelente estado, aro 29, 21 velocidades.",
+    "foto": "fotos/bicicleta-trek.jpg",
+    "estado": "disponible"
+  },
+  {
+    "id": "2",
+    "articulo": "Sillón de 3 cuerpos",
+    "valor": 85000,
+    "descripcion": "Sillón muy cómodo, color gris oscuro. Tiene un pequeño detalle en una pata.",
+    "foto": "fotos/sillon.jpg",
+    "estado": "reservado"
+  },
+  {
+    "id": "3",
+    "articulo": "Mesa de centro madera",
+    "valor": 30000,
+    "descripcion": "Mesa de centro rústica de madera de pino, ideal para sala de estar.",
+    "foto": "fotos/mesa-centro.jpg",
+    "estado": "vendido"
+  }
+]
