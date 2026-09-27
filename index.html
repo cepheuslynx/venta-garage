@@ -6,6 +6,8 @@
   <title>Venta de Garage - Catálogo de Artículos</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- PapaParse CDN para leer archivos CSV de forma robusta -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
   <!-- Tailwind Configuration for custom colors if needed -->
   <script>
     tailwind.config = {
@@ -369,24 +371,47 @@
       });
     });
 
-    // Fetch inicial de productos
+    // Fetch inicial de productos desde CSV
     async function loadProducts() {
       try {
-        // Añadimos cache buster para evitar problemas al actualizar el json
-        const response = await fetch('productos.json?v=' + new Date().getTime());
+        // Añadimos cache buster para evitar problemas al actualizar el archivo
+        const response = await fetch('productos.csv?v=' + new Date().getTime());
         if (!response.ok) {
-          throw new Error('No se pudo cargar productos.json');
+          throw new Error('No se pudo cargar productos.csv');
         }
-        productos = await response.json();
-        updateStats();
-        renderProducts();
+        const csvText = await response.text();
+        
+        // Parsear CSV usando PapaParse
+        Papa.parse(csvText, {
+          header: true,
+          skipEmptyLines: true,
+          dynamicTyping: true, // Convierte números automáticamente
+          complete: function(results) {
+            // Normalizar y limpiar datos por si vienen vacíos de Excel
+            productos = results.data.map(item => {
+              return {
+                id: item.id || '',
+                articulo: item.articulo || 'Sin nombre',
+                valor: Number(item.valor) || 0,
+                descripcion: item.descripcion || '',
+                foto: item.foto ? String(item.foto).trim() : null,
+                estado: item.estado ? String(item.estado).trim().toLowerCase() : 'disponible'
+              };
+            });
+            updateStats();
+            renderProducts();
+          },
+          error: function(err) {
+            throw new Error(err.message);
+          }
+        });
       } catch (err) {
-        console.error("Error al cargar la base de datos:", err);
+        console.error("Error al cargar la base de datos CSV:", err);
         productsGrid.innerHTML = `
           <div class="col-span-full bg-red-50 border border-red-100 rounded-2xl p-6 text-center max-w-md mx-auto shadow-sm">
             <span class="text-3xl">⚠️</span>
             <h3 class="text-md font-bold text-red-800 mt-2">Error al cargar productos</h3>
-            <p class="text-xs text-red-500 mt-1">Asegúrate de que productos.json existe y tiene un formato correcto.</p>
+            <p class="text-xs text-red-500 mt-1">Asegúrate de que productos.csv existe y tiene un formato correcto.</p>
           </div>
         `;
       }

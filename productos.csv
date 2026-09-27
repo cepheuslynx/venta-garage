@@ -1,0 +1,4 @@
+id,articulo,valor,descripcion,foto,estado
+1,Bicicleta Trek,120000,"Bicicleta de montaña Trek en excelente estado, aro 29, 21 velocidades.",fotos/bicicleta-trek.jpg,disponible
+2,Sillón de 3 cuerpos,85000,"Sillón muy cómodo, color gris oscuro. Tiene un pequeño detalle en una pata.",fotos/sillon.jpg,reservado
+3,Mesa de centro madera,30000,"Mesa de centro rústica de madera de pino, ideal para sala de estar.",fotos/mesa-centro.jpg,vendido
